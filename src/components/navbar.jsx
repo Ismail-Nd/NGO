@@ -45,8 +45,10 @@ function navbar() {
                 <li><a href="">Contact</a></li>
             </ul>
             <div className="flex gap-4 items-center">
-                <BiSearch/>
-                <button className='cursor-pointer border-2 border-red-500 rounded-sm py-1 px-2'>Donate now</button>
+                <a href=""><BiSearch size={30}/></a>
+                                <button className='cursor-pointer border-1 font-normal border-red-500 bg-white text-md text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 ease-in-out rounded-sm py-1 px-2 '>
+                  Donate now
+                </button>
             </div>
         </div>
     </nav>
