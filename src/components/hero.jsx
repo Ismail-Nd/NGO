@@ -4,10 +4,9 @@ import banner from "../assets/banner.png";
 function Hero() {
   return (
     <>
-      <div className="flex w-full bg-blue-100 h-full flex-row justify-center items-center">
+      <div className="flex w-full px-50 bg-blue-100 h-full flex-row justify-center items-center">
         <div className="flex flex-col gap-3 w-[50%] leading-5">
-          {/* <h1 className='text-4xl font-bold'>Welcome to <span className='text-red-500'>Charity</span></h1> */}
-          <p className="text-7xl mt-10">
+          <p className="text-7xl">
             <span className="font-bold">
               {" "}
               <span className="relative ">
@@ -23,7 +22,7 @@ function Hero() {
             the 1500s, when an unknown printer took a type and scrambled.
           </p>
         </div>
-        <div className="py-20">
+        <div className="py-20 w-1/2">
           <img src={banner} alt="" srcset="" />
         </div>
       </div>

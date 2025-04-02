@@ -48,7 +48,7 @@ const Card = ({ title, description, icon, bgColor }) => {
 
 const DonationCards = () => {
   return (
-    <div className="grid py-20 px-40 grid-cols-1 md:grid-cols-4 gap-6 p-6">
+    <div className="grid px-50 py-20 grid-cols-1 md:grid-cols-4 gap-6 p-6">
       {donations.map((donation, index) => (
         <Card
           key={index}

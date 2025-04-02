@@ -58,51 +58,50 @@ const DonationCard = ({
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-sm">
         {/* Image & Category */}
         <div className="relative h-[450px]">
-          <img src={image} alt={title} className="w-full h-56 object-cover transition-transform duration-300 ease-out hover:scale-110 hover:rotate-5" />
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-56 object-cover transition-transform duration-300 ease-out hover:scale-110 hover:rotate-5"
+          />
           <span
             className={`absolute top-3 left-3 px-3 py-1 text-sm text-white rounded-md ${bgColor}`}
           >
             {category}
           </span>
-
-
-        <div className="px-4 py-15 ">
-          <div className="bg-gray-100 absolute w-[90%] bottom-49 bg-opacity-90 py-1 px-3 rounded-lg flex flex-col justify-between items-center shadow-md">
-            <div className="flex justify-between w-full">
-              <span className="text-gray-700 font-semibold">
-                Goal:{" "}
-                <span className="text-black">${goal.toLocaleString()}</span>
-              </span>
-              <span className="text-black font-semibold">{progress}%</span>
+          <div className="px-4 py-15 ">
+            <div className="bg-gray-100 absolute w-[90%] bottom-49 bg-opacity-90 py-1 px-3 rounded-lg flex flex-col justify-between items-center shadow-md">
+              <div className="flex justify-between w-full">
+                <span className="text-gray-700 font-semibold">
+                  Goal:{" "}
+                  <span className="text-black">${goal.toLocaleString()}</span>
+                </span>
+                <span className="text-black font-semibold">{progress}%</span>
+              </div>
+              <div className="w-full bg-gray-200 h-2 rounded-full mb-4">
+                <div
+                  className="bg-red-500 h-2 rounded-full"
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
             </div>
-            <div className="w-full bg-gray-200 h-2 rounded-full mb-4">
-              <div
-                className="bg-red-500 h-2 rounded-full"
-                style={{ width: `${progress}%` }}
-              ></div>
-            </div>
-          </div>
 
-          {/* Title & Description */}
-          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-          <p className="text-gray-600 text-sm mt-2">{description}</p>
+            {/* Title & Description */}
+            <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+            <p className="text-gray-600 text-sm mt-2">{description}</p>
 
-          {/* Date & Admin */}
-          <div className="flex justify-between items-center mt-4 text-gray-600 text-sm">
-            <div className="flex items-center space-x-1">
-              <span>📅</span>
-              <span>{date}</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <span>👤</span>
-              <span>{admin}</span>
+            {/* Date & Admin */}
+            <div className="flex justify-between items-center mt-4 text-gray-600 text-sm">
+              <div className="flex items-center space-x-1">
+                <span>📅</span>
+                <span>{date}</span>
+              </div>
+              <div className="flex items-center space-x-1">
+                <span>👤</span>
+                <span>{admin}</span>
+              </div>
             </div>
           </div>
         </div>
-
-        </div>
-
-        {/* Goal & Progress */}
       </div>
     </>
   );
@@ -111,7 +110,7 @@ const DonationCard = ({
 const Cards = () => {
   return (
     <>
-      <div className="flex flex-col gap-20  p-20 bg-gray-100">
+      <div className="flex flex-col gap-20 py-20 h-[650px] bg-gray-100">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-2xl font-normal text-gray-400">
             Trending causes

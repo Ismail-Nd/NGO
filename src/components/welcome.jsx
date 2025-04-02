@@ -7,7 +7,7 @@ import about2 from "../assets/about 2.png"
 function welcome() {
   return (
     <>
-      <div className="flex w-full px-40 py-20 bg-white h-full flex-row justify-center items-center">
+      <div className="flex w-full px-50 py-20 bg-white h-full flex-row justify-center items-center">
         <div className="w-1/2 relative items-end">
           <img src={about2} alt="" className="absolute right-20"/>
           <img src={about} alt=""  className="flex items-end"/>
