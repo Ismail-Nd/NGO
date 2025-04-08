@@ -16,6 +16,13 @@ export default [
         sourceType: 'module',
       },
     },
+    theme: {
+      extend: {
+        boxShadow: {
+          'soft': '0 10px 30px rgba(0, 0, 0, 0.05)',
+        },
+      },
+    },
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
