@@ -8,6 +8,7 @@ import Events from './components/events'
 import Stoppoverty from './components/stoppoverty'
 import Latestnews from './components/latestnews'
 import Subscribe from './components/subscribe'
+import Footer from './components/footer'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Stoppoverty />
       <Latestnews />
       <Subscribe />
+      <Footer />
     </div>
   )
 }
